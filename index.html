@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Café & Aroma - Cafeteria Gourmet</title>
+    <!-- Conexão com o CSS Externo -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- 1. Cabeçalho Semântico (header) com ID (Seletor ID) -->
+    <header id="topo">
+        <h1>Café & Aroma</h1>
+        <p>Sua pausa diária para um café especial</p>
+        
+        <!-- Menu de Navegação Semântico (nav) -->
+        <nav id="menu-principal">
+            <ul>
+                <!-- Links Âncora Internos -->
+                <li><a href="#sobre">Sobre Nós</a></li>
+                <li><a href="#preparo">Nosso Processo</a></li>
+                <li><a href="#cardapio">Cardápio</a></li>
+                <li><a href="#contato">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- 2. Área Principal da Página (main) -->
+    <main>
+
+        <!-- Seção 1: Sobre a Cafeteria -->
+        <section id="sobre">
+            <h2>Sobre a Nossa Cafeteria</h2>
+            <p>
+                Bem-vindo ao <strong>Café & Aroma</strong>! Selecionamos grãos <em>100% arábica</em> produzidos nas serras brasileiras para entregar uma experiência inesquecível.
+            </p>
+            <br>
+            <p>
+                Venha relaxar em um ambiente acolhedor, pensado para reuniões, estudos ou um bom bate-papo.
+            </p>
+
+            <!-- Mídia: Figura com Legenda (figure + figcaption + img + src + alt) -->
+            <figure>
+                <img src="imagens/cafe-especial.jpg" alt="Xícara de café espresso recém tirado com arte no leite">
+                <figcaption>Nosso famoso Latte com grãos torrados artesanalmente.</figcaption>
+            </figure>
+        </section>
+
+        <!-- Artigo Semântico com Classe (Seletor de Classe) -->
+        <article class="destaque">
+            <h2>Destaque da Semana: Grãos Especiais</h2>
+            <p>Nesta semana, estamos servindo o lote especial da Mantiqueira de Minas com notas florais e acidez equilibrada.</p>
+        </article>
+
+        <!-- Seção 2: Processo de Preparo com Lista Ordenada -->
+        <section id="preparo">
+            <h2>Nosso Processo de Preparo</h2>
+            <p>Garantimos a máxima qualidade em cada xícara seguindo estes passos rigorosos:</p>
+            
+            <!-- Lista Ordenada (ol) -->
+            <ol>
+                <li>Seleção manual dos melhores grãos verdes.</li>
+                <li>Torra artesanal em pequenas quantidades.</li>
+                <li>Moagem no momento do preparo.</li>
+                <li>Extração com água na temperatura e pressão perfeitas.</li>
+            </ol>
+
+            <!-- Imagem 2 (Exigência do edital: pelo menos duas imagens) -->
+            <img src="imagens/ambiente.jpg" alt="Ambiente interno aconchegante da cafeteria" class="imagem-secundaria">
+        </section>
+
+        <!-- Seção 3: Cardápio e Tabela -->
+        <section id="cardapio">
+            <h2>Nosso Cardápio</h2>
+            
+            <!-- Lista Não Ordenada (ul) -->
+            <h3>Opções Mais Pedidas</h3>
+            <ul>
+                <li>Espresso Tradicional</li>
+                <li>Cappuccino Italiano</li>
+                <li>Pão de Queijo Mineiro</li>
+                <li>Bolo Caseiro de Cenoura com Chocolate</li>
+            </ul>
+
+            <h3>Tabela de Preços e Tamanhos</h3>
+            
+            <!-- Tabela com Cabeçalho, 3 colunas e 4 linhas de dados -->
+            <div class="tabela-container">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Bebida</th>
+                            <th>Tamanho</th>
+                            <th>Preço</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Café Espresso</td>
+                            <td>50ml</td>
+                            <td>R$ 6,00</td>
+                        </tr>
+                        <tr>
+                            <td>Cappuccino</td>
+                            <td>200ml</td>
+                            <td>R$ 12,00</td>
+                        </tr>
+                        <tr>
+                            <td>Latte Macchiato</td>
+                            <td>300ml</td>
+                            <td>R$ 14,00</td>
+                        </tr>
+                        <tr>
+                            <td>Iced Coffee</td>
+                            <td>400ml</td>
+                            <td>R$ 16,00</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+
+        <!-- Área de Conteúdo Relacionado (aside) -->
+        <aside id="contato">
+            <h3>Informações e Redes Sociais</h3>
+            <p><strong>Horário de Funcionamento:</strong> Segunda a Sábado, das 08h às 20h.</p>
+            <!-- Link Externo (target="_blank") -->
+            <p>
+                Acompanhe nossas novidades no <a href="https://www.instagram.com" target="_blank" rel="noopener noreferrer">Instagram Oficial</a>.
+            </p>
+        </aside>
+
+    </main>
+
+    <!-- 3. Rodapé Semântico (footer) -->
+    <footer>
+        <p>&copy; 2026 Café & Aroma - Todos os direitos reservados.</p>
+        <!-- Link Âncora para voltar ao topo -->
+        <p><a href="#topo">▲ Voltar ao Topo</a></p>
+    </footer>
+
+</body>
